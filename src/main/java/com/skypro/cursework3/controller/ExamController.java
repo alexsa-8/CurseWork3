@@ -14,7 +14,7 @@ import java.util.Collection;
 public class ExamController {
     private final ExaminerService examinerService;
 
-    public ExamController(ExaminerService examinerService) {
+    public ExamController(@SuppressWarnings("SpringJavaInjectionPointsAutowiringInspection") ExaminerService examinerService) {
         this.examinerService = examinerService;
     }
     @GetMapping("/get/{amount}")

@@ -17,8 +17,14 @@ public class JavaQuestionService implements QuestionService {
         this.questions = questions;
     }
 
+//    public JavaQuestionService() {
+//
+//        questions = null;
+//    }
+
     @Override
     public Question add(String question, String answer) {
+
         return add(new Question(question, answer));
     }
 
