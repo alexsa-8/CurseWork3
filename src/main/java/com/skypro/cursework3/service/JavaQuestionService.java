@@ -4,11 +4,13 @@ import com.skypro.cursework3.exception.QuestionNotFoundException;
 import com.skypro.cursework3.model.Question;
 import com.skypro.cursework3.repository.QuestionRepository;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Random;
 
+@Service
 public class JavaQuestionService implements QuestionService {
     private final QuestionRepository questions;
     private final Random random = new Random();
@@ -16,11 +18,6 @@ public class JavaQuestionService implements QuestionService {
     public JavaQuestionService(@Qualifier("javaQuestionRepository") QuestionRepository questions) {
         this.questions = questions;
     }
-
-//    public JavaQuestionService() {
-//
-//        questions = null;
-//    }
 
     @Override
     public Question add(String question, String answer) {

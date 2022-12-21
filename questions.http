@@ -1,11 +1,11 @@
 ###Добавить вопрос
 GET http://localhost:8080/exam/java/add?question=QuestionText&answer=QuestionAnswer
 ###Добавить вопрос
-GET http://localhost:8080/exam/java/add?question=QuestionText1&answer=QuestionAnswer1
+GET http://localhost:8080/exam/java/add?question=2*2&answer=4
 ###Добавить вопрос
-GET http://localhost:8080/exam/java/add?question=QuestionText2&answer=QuestionAnswer2
+GET http://localhost:8080/exam/java/add?question=3*3&answer=9
 ###Добавить вопрос
-GET http://localhost:8080/exam/java/add?question=QuestionText3&answer=QuestionAnswer3
+GET http://localhost:8080/exam/java/add?question=4*4&answer=16
 ###Удалить вопрос
 GET http://localhost:8080/exam/java/remove?question=QuestionText&answer=QuestionAnswer
 ###Получить все вопросы
