@@ -44,7 +44,6 @@ public class ExaminerServiceImplTest {
     }
     @Test
     public void weGetQuestions(){
-
         Assertions.assertEquals(examinerService.getQuestions(4), questions);
     }
 }

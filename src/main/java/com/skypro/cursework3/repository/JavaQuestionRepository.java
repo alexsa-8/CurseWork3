@@ -10,6 +10,12 @@ import java.util.Set;
 @Repository
 public class JavaQuestionRepository implements QuestionRepository {
     private final Set<Question> questions = new HashSet<>();
+//    @Override
+//    public Question add(Object question, Object answer) {
+//        Question question1=new Question(question, answer);
+//        questions.add(question1);
+//        return (Question) question;
+//    }
 
     @Override
     public Question add(Question question) {
